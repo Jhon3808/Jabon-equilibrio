@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jabón Equilibrio | Piel en balance, belleza que brilla</title>
+<meta name="description" content="Jabón Equilibrio — Natural, Cuidado y Confianza. Emprendimiento escolar.">
+<style>
+:root{--g:#087b68;--g2:#0d9b80;--l:#e9f8f3;--c:#fff9ed;--t:#23433d;--m:#65756f;--gold:#e8b83e;--sh:0 15px 45px rgba(8,123,104,.13)}
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--t);background:#fcfffe;line-height:1.65}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid #dcefe9}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;color:var(--g);font-weight:800}.brand img{width:50px;height:50px;border-radius:50%;object-fit:cover}
+nav ul{list-style:none;display:flex;gap:20px}.nav a{font-size:.9rem;font-weight:700;color:#45655f}.nav a:hover{color:var(--g)}
+.menu{display:none;background:var(--g);color:white;border:0;border-radius:10px;padding:9px 12px;font-size:20px}
+.hero{min-height:100vh;padding:145px 0 75px;background:radial-gradient(circle at 85% 18%,#d9f6ed 0,transparent 32%),linear-gradient(135deg,#f7fffc,#fff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}.badge{display:inline-block;padding:8px 15px;border-radius:30px;background:var(--l);color:var(--g);font-weight:800;font-size:.8rem;letter-spacing:1px;text-transform:uppercase}
+h1{font-size:clamp(3rem,7vw,6rem);line-height:.92;color:var(--g);margin:18px 0}.tagline{font-size:clamp(1.3rem,2.6vw,1.8rem);font-weight:700;color:#4b6b64}.hero p{color:var(--m);font-size:1.08rem;max-width:620px;margin-top:18px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 21px;border-radius:30px;font-weight:800;border:2px solid var(--g);cursor:pointer}.primary{background:var(--g);color:#fff}.secondary{color:var(--g);background:#fff}.btn:hover{transform:translateY(-2px);box-shadow:var(--sh)}
+.logo-box{background:#fff;padding:28px;border-radius:35px;box-shadow:var(--sh);border:1px solid #d9eee9}.logo-box img{width:min(440px,100%);margin:auto;border-radius:50%}
+section{padding:90px 0}.alt{background:var(--l)}.section-title{text-align:center;max-width:760px;margin:0 auto 45px}.kicker{color:var(--g);font-weight:900;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}
+h2{font-size:clamp(2rem,4vw,3rem);color:var(--g);margin:8px 0 10px}.section-title p{color:var(--m)}
+.product{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}.photo-slot{min-height:430px;border:2px dashed #9fd9ce;border-radius:28px;background:linear-gradient(135deg,#f3fffc,#e6f7f1);display:grid;place-items:center;text-align:center;color:#5e8179;padding:30px}.big{font-size:4rem;display:block}
+.product h3{font-size:1.8rem;color:var(--g);margin-bottom:10px}.product p{color:var(--m)}.benefits{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.benefit{padding:14px;border-radius:15px;background:#fff;border:1px solid #d8eee8;font-weight:700}
+.ingredients{width:100%;border-collapse:collapse;background:#fff;border-radius:18px;overflow:hidden}.ingredients th{background:var(--g);color:#fff;text-align:left;padding:15px}.ingredients td{padding:15px;border-top:1px solid #d8eee8}.ingredients tr:nth-child(even) td{background:#f3fbf8}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid #d9eee9;border-radius:22px;padding:26px;box-shadow:0 7px 25px rgba(0,0,0,.04)}.card .icon{font-size:2rem;margin-bottom:12px}.card h3{color:var(--g);margin-bottom:7px}.card p{color:var(--m)}
+.mission{display:grid;grid-template-columns:1fr 1fr;gap:22px}.mission .box{padding:30px;border-radius:23px;background:#e6f8f2;border:2px solid #9dd9ce}.mission .vision{background:var(--c);border-color:#efc16b}.mission h3{text-align:center;color:var(--g);margin-bottom:10px}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:20px}.value{padding:20px;border-radius:18px;text-align:center;background:#f3fbf8;border:1px solid #d9eee9}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.person{text-align:center;padding:25px 14px;background:#fff;border:1px solid #d9eee9;border-radius:20px}.avatar{width:75px;height:75px;border-radius:50%;margin:0 auto 12px;background:var(--l);display:grid;place-items:center;font-size:1.6rem}.person strong{display:block;color:var(--g)}.person span{font-size:.9rem;color:var(--m)}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.video{min-height:330px;border:2px dashed #9fd9ce;border-radius:25px;background:#eaf8f4;display:grid;place-items:center;text-align:center;color:#5d7f77}.play{font-size:4rem}
+.socials{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.social{background:#fff;border:1px solid #d9eee9;border-radius:20px;padding:25px;text-align:center}.symbol{font-size:2.1rem}.social h3{color:var(--g);margin:7px}.social p{font-size:.88rem;color:var(--m)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-item{padding:18px;background:#fff;border:1px solid #d9eee9;border-radius:16px;margin-bottom:12px}form{background:#fff;border:1px solid #d9eee9;padding:25px;border-radius:22px}label{font-weight:700;display:block;margin-bottom:5px}input,textarea{width:100%;padding:13px;border:1px solid #cde5df;border-radius:11px;margin-bottom:14px;font:inherit}textarea{min-height:130px}.note{padding:16px 18px;background:#fff8df;border:1px solid #efd276;border-radius:14px;color:#665525;margin-top:20px}
+footer{background:#075e51;color:#eafff9;text-align:center;padding:32px}footer p{margin-top:5px}
+@media(max-width:900px){nav ul{display:none;position:absolute;top:70px;left:4%;right:4%;background:#fff;padding:18px;border-radius:18px;box-shadow:var(--sh);flex-direction:column}nav ul.open{display:flex}.menu{display:block}.hero-grid,.product,.mission,.contact{grid-template-columns:1fr}.grid3,.values{grid-template-columns:1fr 1fr}.team{grid-template-columns:1fr 1fr}.socials{grid-template-columns:1fr 1fr}}
+@media(max-width:580px){section{padding:65px 0}.grid3,.values,.team,.gallery,.socials,.benefits{grid-template-columns:1fr}.brand span{display:none}.hero{padding-top:120px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#inicio"><img src="assets/logo-jabon-equilibrio.jpg" alt="Logo Jabón Equilibrio"><span>Jabón Equilibrio</span></a>
+<button class="menu" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</button>
+<nav><ul>
+<li><a href="#inicio">Inicio</a></li><li><a href="#producto">Producto</a></li><li><a href="#nosotros">Quiénes somos</a></li><li><a href="#equipo">Equipo</a></li><li><a href="#galeria">Fotos</a></li><li><a href="#publicidad">Publicidad</a></li><li><a href="#redes">Redes</a></li><li><a href="#contacto">Contacto</a></li>
+</ul></nav></div></header>
+
+<section class="hero" id="inicio"><div class="container hero-grid"><div>
+<span class="badge">Natural · Cuidado · Confianza</span><h1>Jabón<br>Equilibrio</h1><div class="tagline">Piel en balance, belleza que brilla.</div>
+<p>Un emprendimiento escolar creado por estudiantes con dedicación, creatividad y mucho cariño, pensado para el cuidado de la piel grasa y mixta.</p>
+<div class="btns"><a class="btn primary" href="#producto">Conoce nuestro producto</a><a class="btn secondary" href="#contacto">Contáctanos</a></div>
+</div><div class="logo-box"><img src="assets/logo-jabon-equilibrio.jpg" alt="Jabón Equilibrio"></div></div></section>
+
+<section id="producto"><div class="container"><div class="section-title"><span class="kicker">Nuestro producto</span><h2>Jabón Equilibrio</h2><p>Para piel grasa y mixta</p></div>
+<div class="product"><div class="photo-slot"><div><span class="big">🧼</span><strong>ESPACIO PARA FOTO DEL PRODUCTO</strong><br><small></small></div></div>
+<div><h3>Cuidado, frescura y equilibrio</h3><p>Jabón Equilibrio es un jabón artesanal pensado especialmente para el cuidado de la piel grasa y mixta. Su propuesta busca limpiar profundamente, ayudar a controlar el exceso de grasa y contribuir a disminuir la apariencia de manchas, dejando una sensación de frescura, equilibrio y luminosidad.</p>
+<div class="benefits"><div class="benefit">✨ Limpieza profunda</div><div class="benefit">⚖️ Control de grasa</div><div class="benefit">🌿 Ayuda a disminuir manchas</div><div class="benefit">💧 Sensación de frescura</div><div class="benefit">☀️ Uso diario</div><div class="benefit">💚 Cuidado de la piel</div></div>
+<div class="note"><strong>Precio:</strong> Por definir · <strong>Pedidos:</strong> WhatsApp próximamente.</div></div></div></div></section>
+
+<section class="alt"><div class="container"><div class="section-title"><span class="kicker">Composición</span><h2>Ingredientes activos</h2></div>
+<table class="ingredients"><tr><th>Ingrediente</th><th>Descripción</th></tr>
+<tr><td><strong>Ácido Kójico</strong></td><td>Ayuda a unificar el tono y disminuir la apariencia de manchas.</td></tr>
+<tr><td><strong>Ácido Azelaico</strong></td><td>Ayuda a controlar el exceso de sebo y las imperfecciones.</td></tr>
+<tr><td><strong>Niacinamida</strong></td><td>Contribuye al cuidado de la barrera cutánea y a una apariencia uniforme.</td></tr>
+<tr><td><strong>Extracto de Regaliz</strong></td><td>Con propiedades calmantes e iluminadoras.</td></tr></table></div></section>
+
+<section><div class="container"><div class="section-title"><span class="kicker">Rutina</span><h2>Modo de uso</h2></div><div class="grid3">
+<div class="card"><div class="icon">💧</div><h3>1. Humedece</h3><p>Humedece el rostro con agua.</p></div><div class="card"><div class="icon">🧼</div><h3>2. Aplica</h3><p>Forma una espuma suave con el jabón.</p></div><div class="card"><div class="icon">⭕</div><h3>3. Masajea</h3><p>Masajea suavemente con movimientos circulares durante 30–60 segundos.</p></div><div class="card"><div class="icon">🚿</div><h3>4. Enjuaga</h3><p>Enjuaga abundantemente y seca con una toalla limpia.</p></div><div class="card"><div class="icon">☀️</div><h3>5. Continúa</h3><p>Continúa con hidratación y protección solar.</p></div></div>
+<div class="note">Recomendamos realizar una prueba de sensibilidad en una pequeña zona de la piel antes del uso continuo.</div></div></section>
+
+<section class="alt" id="nosotros"><div class="container"><div class="section-title"><span class="kicker">Nuestra esencia</span><h2>Quiénes somos</h2><p>Un proyecto nacido desde el colegio con propósito, creatividad y cariño.</p></div>
+<div class="mission"><div class="box"><h3>Nuestra misión</h3><p>Ofrecer un jabón de calidad, formulado con ingredientes cuidadosamente seleccionados, que ayude a las personas con piel grasa y mixta a sentirse más confiadas, en paz y alegres con el cuidado de su piel, promoviendo hábitos de higiene y autocuidado desde el emprendimiento escolar.</p></div>
+<div class="box vision"><h3>Nuestra visión</h3><p>Ser un emprendimiento escolar reconocido por su compromiso con la calidad, la naturalidad y el bienestar de la piel, inspirando a más jóvenes a crear soluciones reales que generen confianza, paz y alegría.</p></div></div>
+<h3 style="color:var(--g);margin:40px 0 15px">Nuestros valores</h3><div class="values">
+<div class="value"><strong>Cuidado</strong><br>Priorizamos el bienestar.</div><div class="value"><strong>Confianza</strong><br>Honestidad y transparencia.</div><div class="value"><strong>Calidad</strong><br>Responsabilidad en cada detalle.</div><div class="value"><strong>Alegría</strong><br>Cuidarse debe sentirse bien.</div><div class="value"><strong>Trabajo en equipo</strong><br>Colaboración y esfuerzo compartido.</div><div class="value"><strong>Innovación</strong><br>Aprender, experimentar y mejorar.</div></div></div></section>
+
+<section id="equipo"><div class="container"><div class="section-title"><span class="kicker">Las fundadoras</span><h2>Nuestro equipo</h2><p>Somos un grupo de estudiantes unidos por la pasión de crear algo útil, bonito y con propósito.</p></div>
+<div class="team"><div class="person"><div class="avatar">🌿</div><strong>Saray Nazarith Carabalí</strong><span>Fundadora</span></div><div class="person"><div class="avatar">🌿</div><strong>Jhelen Solarte</strong><span>Fundadora</span></div><div class="person"><div class="avatar">🌿</div><strong>Liza González</strong><span>Fundadora</span></div><div class="person"><div class="avatar">🌿</div><strong>Ana Valeria Charrupi</strong><span>Fundadora</span></div></div></div></section>
+
+<section class="alt" id="galeria"><div class="container"><div class="section-title"><span class="kicker">Galería</span><h2>Fotos del producto</h2><p></p></div><div class="gallery">
+<div class="photo-slot">📷<br><strong>FOTO 1</strong></div><div class="photo-slot">📷<br><strong>FOTO 2</strong></div><div class="photo-slot">📷<br><strong>FOTO 3</strong></div></div></div></section>
+
+<section id="publicidad"><div class="container"><div class="section-title"><span class="kicker">Publicidad</span><h2>Conoce Jabón Equilibrio</h2><p></p></div><div class="video"><div><div class="play">▶️<div class="video">
+    <video controls width="100%">
+        <source src="assets/WhatsApp Video 2026-08-25 at 17.06.24.mp4" type="video/mp4">
+        Tu navegador no puede reproducir este vídeo.
+    </video>
+</div></section>
+
+<section class="alt" id="redes"><div class="container"><div class="section-title"><span class="kicker">Conecta con nosotras</span><h2>Redes sociales</h2><p>.</p></div><div class="socials">
+<div class="social"><div class="symbol">📸</div><h3>Instagram</h3><p>Cuenta por definir</p></div><div class="social"><div class="symbol">🎵</div><h3>TikTok</h3><p>Cuenta por definir</p></div><div class="social"><div class="symbol">💬</div><h3>WhatsApp</h3><p>Número por definir</p></div><div class="social"><div class="symbol">📘</div><h3>Facebook</h3><p>Cuenta por definir</p></div></div></div></section>
+
+<section id="contacto"><div class="container"><div class="section-title"><span class="kicker">Estamos para atenderte</span><h2>Contacto</h2></div><div class="contact"><div>
+<div class="contact-item">📍 <strong>Ubicación</strong><br>Por definir</div><div class="contact-item">📱 <strong>Teléfono / WhatsApp</strong><br>Por definir</div><div class="contact-item">✉️ <strong>Correo electrónico</strong><br>jabonequilibrio@gmail.com </div><div class="contact-item">🌐 <strong>Redes sociales</strong><br>Instagram · TikTok · Facebook · WhatsApp</div></div>
+<form onsubmit="event.preventDefault();alert('El formulario está preparado visualmente. Para recibir mensajes reales habrá que conectarlo a un servicio de formularios.');"><label>Nombre</label><input type="text" placeholder="Tu nombre"><label>Correo</label><input type="email" placeholder="tu@email.com"><label>Mensaje</label><textarea placeholder="¿En qué podemos ayudarte?"></textarea><button class="btn primary" type="submit">Enviar mensaje</button></form></div></div></section>
+
+<footer><div class="container"><strong>Jabón Equilibrio</strong><p>Piel en balance, belleza que brilla.</p><p>Natural · Cuidado · Confianza</p><small>Emprendimiento escolar</small></div></footer>
+<script>document.querySelectorAll('nav ul a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav ul').classList.remove('open')));</script>
+</body></html>
